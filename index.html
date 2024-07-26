@@ -1,107 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <base href="https://bureaudescongres.netlify.app/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bureau des Congrès de Limoges - Accueil</title>
-    <base href="https://bureaudescongres.netlify.app/">
+    <title>Bureau des Congrès de Limoges - Votre partenaire événementiel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Bureau des Congrès de Limoges</a>
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="salles-de-reunion.html">Salles de réunion</a></li>
-                <li><a href="activites.html">Activités</a></li>
-                <li><a href="traiteurs.html">Traiteurs</a></li>
-                <li><a href="transport.html">Transport</a></li>
-                <li><a href="hotels.html">Hôtels</a></li>
-                <li><a href="technique.html">Technique</a></li>
-                <li><a href="cadeaux.html">Cadeaux</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="/" class="logo">Bureau des Congrès de Limoges</a>
+      <ul class="menu">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="#services">Nos Services</a></li>
+        <li><a href="/activites">Activités</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Bienvenue à Limoges</h2>
-                <p>Découvrez une destination unique pour vos événements professionnels, alliant tradition et modernité.</p>
-            </div>
-        </section>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Découvrez Limoges pour votre prochain événement</h1>
+        <p>Le Bureau des Congrès de Limoges, votre partenaire pour des événements inoubliables</p>
+        <a href="/activites" class="btn btn-primary">Nos Activités</a>
+        <a href="#services" class="btn btn-secondary">Nos Services</a>
+      </div>
+    </section>
 
-        <h1>Nos services</h1>
+    <section id="services" class="services">
+      <h2>Nos Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/400x300?conference-room" alt="Salle de réunion">
+          <div class="service-info">
+            <h3>Salles de réunion</h3>
+            <p>Des espaces adaptés à tous vos besoins</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/400x300?catering" alt="Service traiteur">
+          <div class="service-info">
+            <h3>Traiteurs</h3>
+            <p>Une sélection de traiteurs locaux de qualité</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/400x300?transportation" alt="Transport">
+          <div class="service-info">
+            <h3>Transport</h3>
+            <p>Solutions de transport pour vos participants</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://source.unsplash.com/random/400x300?hotel" alt="Hôtels">
+          <div class="service-info">
+            <h3>Hébergement</h3>
+            <p>Un large choix d'hôtels pour tous les budgets</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="/services" class="btn btn-primary">Plus de Services</a>
+      </div>
+    </section>
 
-        <section class="services">
-            <a href="salles-de-reunion.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?conference-room" alt="Salle de réunion moderne à Limoges">
-                <h3>Salles de réunion</h3>
-                <p>Des espaces adaptés à tous vos besoins, du séminaire à la conférence.</p>
-            </a>
-            <a href="activites.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?porcelain-workshop" alt="Atelier de porcelaine à Limoges">
-                <h3>Activités</h3>
-                <p>Découvrez le patrimoine et le savoir-faire de Limoges à travers des expériences uniques.</p>
-            </a>
-            <a href="traiteurs.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?catering" alt="Service traiteur haut de gamme">
-                <h3>Traiteurs</h3>
-                <p>Une sélection de traiteurs locaux pour ravir vos convives.</p>
-            </a>
-            <a href="transport.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?limousine" alt="Service de transport VIP">
-                <h3>Transport</h3>
-                <p>Des solutions de transport sur mesure pour faciliter vos déplacements.</p>
-            </a>
-            <a href="hotels.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?hotel-room" alt="Chambre d'hôtel luxueuse à Limoges">
-                <h3>Hôtels</h3>
-                <p>Un large choix d'hébergements pour tous les budgets et toutes les exigences.</p>
-            </a>
-            <a href="technique.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?audio-visual-equipment" alt="Équipement technique audiovisuel">
-                <h3>Technique</h3>
-                <p>Des solutions techniques de pointe pour la réussite de vos événements.</p>
-            </a>
-            <a href="cadeaux.html" class="service-card">
-                <img src="https://source.unsplash.com/random/400x300?limoges-porcelain" alt="Cadeaux en porcelaine de Limoges">
-                <h3>Cadeaux</h3>
-                <p>Offrez un souvenir unique de Limoges à vos participants.</p>
-            </a>
-        </section>
+    <section class="partners">
+      <h2>Nos Partenaires</h2>
+      <div class="partner-logos">
+        <div>
+          <img src="https://source.unsplash.com/random/150x150?logo" alt="Région Nouvelle Aquitaine" class="partner-logo">
+          <p class="partner-name">Région Nouvelle Aquitaine</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/150x150?logo" alt="Département" class="partner-logo">
+          <p class="partner-name">Département</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/150x150?logo" alt="Métropole" class="partner-logo">
+          <p class="partner-name">Métropole</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/150x150?logo" alt="Mairie" class="partner-logo">
+          <p class="partner-name">Mairie</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/random/150x150?logo" alt="CCI" class="partner-logo">
+          <p class="partner-name">CCI</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <h2>Nos partenaires</h2>
-        <section class="partners">
-            <div class="partner-logos">
-                <div class="partner-logo">
-                    <img src="https://source.unsplash.com/random/150x100?logo" alt="Logo Région Nouvelle Aquitaine">
-                    <p class="partner-name">Région Nouvelle Aquitaine</p>
-                </div>
-                <div class="partner-logo">
-                    <img src="https://source.unsplash.com/random/150x100?logo" alt="Logo Département">
-                    <p class="partner-name">Département</p>
-                </div>
-                <div class="partner-logo">
-                    <img src="https://source.unsplash.com/random/150x100?logo" alt="Logo Métropole">
-                    <p class="partner-name">Métropole</p>
-                </div>
-                <div class="partner-logo">
-                    <img src="https://source.unsplash.com/random/150x100?logo" alt="Logo Mairie">
-                    <p class="partner-name">Mairie</p>
-                </div>
-                <div class="partner-logo">
-                    <img src="https://source.unsplash.com/random/150x100?logo" alt="Logo CCI">
-                    <p class="partner-name">CCI</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <footer>
+    <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
-    </footer>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
