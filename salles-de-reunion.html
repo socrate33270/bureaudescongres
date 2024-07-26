@@ -32,4 +32,63 @@
             <div class="room-card">
                 <img src="https://source.unsplash.com/random/600x400?conference-room" alt="Salle Consulat" class="room-image">
                 <div class="room-info">
-                    <h3 class="room-name">Salle Consulat</h
+                    <h3 class="room-name">Salle Consulat</h3>
+                    <p class="room-capacity">Capacité : 50 personnes</p>
+                    <p class="room-equipment">Équipements : Vidéoprojecteur, Wifi, Sonorisation</p>
+                    <a href="salles-de-reunion/consulat.html" class="info-button">Plus d'informations</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="https://source.unsplash.com/random/600x400?meeting-room" alt="Salle Porcelaine" class="room-image">
+                <div class="room-info">
+                    <h3 class="room-name">Salle Porcelaine</h3>
+                    <p class="room-capacity">Capacité : 100 personnes</p>
+                    <p class="room-equipment">Équipements : Écran géant, Wifi, Système de visioconférence</p>
+                    <a href="salles-de-reunion/porcelaine.html" class="info-button">Plus d'informations</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="https://source.unsplash.com/random/600x400?boardroom" alt="Salle Émaux" class="room-image">
+                <div class="room-info">
+                    <h3 class="room-name">Salle Émaux</h3>
+                    <p class="room-capacity">Capacité : 30 personnes</p>
+                    <p class="room-equipment">Équipements : Tableau interactif, Wifi, Système de son</p>
+                    <a href="salles-de-reunion/emaux.html" class="info-button">Plus d'informations</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="https://source.unsplash.com/random/600x400?auditorium" alt="Auditorium Augustoritum" class="room-image">
+                <div class="room-info">
+                    <h3 class="room-name">Auditorium Augustoritum</h3>
+                    <p class="room-capacity">Capacité : 300 personnes</p>
+                    <p class="room-equipment">Équipements : Scène, Régie son et lumière, Cabines de traduction</p>
+                    <a href="salles-de-reunion/augustoritum.html" class="info-button">Plus d'informations</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Cette fonction simule la redirection vers une page détaillée pour chaque salle
+        function showRoomDetails(roomName) {
+            alert(`Page détaillée pour ${roomName}:\n\nDescriptif de la salle\nLieu de la salle\nConfigurations possibles\nNombre de personnes\n\nContact du référent:\nNom Prénom\nTéléphone: 05 XX XX XX XX\nEmail: contact@salle-${roomName.toLowerCase()}.com\n\nBesoin d'une solution clé en main ?\nContactez l'Office de Tourisme de Limoges:\nMarie Dupont\nTéléphone: 05 55 34 46 87\nEmail: m.dupont@limoges-tourisme.com`);
+        }
+
+        // Ajout des écouteurs d'événements pour les boutons "Plus d'informations"
+        document.querySelectorAll('.info-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const roomName = e.target.closest('.room-card').querySelector('.room-name').textContent;
+                showRoomDetails(roomName);
+            });
+        });
+    </script>
+</body>
+</html>
