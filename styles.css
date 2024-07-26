@@ -131,7 +131,38 @@ nav {
     margin-bottom: 0.5rem;
 }
 
+.partners {
+    padding: 2rem;
+    text-align: center;
+}
 
+.partners h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    text-align: center;
+    margin: 1rem;
+}
+
+.partner-logo img {
+    max-width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.partner-name {
+    font-weight: bold;
+}
 
 footer {
     background-color: var(--light-gray);
