@@ -142,15 +142,15 @@ nav {
 }
 
 .partner-logos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .partner-logo {
     text-align: center;
+    margin: 1rem;
 }
 
 .partner-logo img {
