@@ -1,173 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <base href="https://www.brocantechic.com/salles-de-reunion">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salles de réunion - Bureau des Congrès de Limoges</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-        :root {
-            --primary-color: #FF5A5F;
-            --secondary-color: #00A699;
-            --text-color: #484848;
-            --background-color: #FFFFFF;
-            --light-gray: #F7F7F7;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--background-color);
-            padding: 1rem;
-            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .menu {
-            list-style-type: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .menu li a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        h1, h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        .room-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .room-card {
-            background-color: var(--light-gray);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .room-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .room-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .room-info {
-            padding: 1.5rem;
-        }
-
-        .room-name {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .room-capacity, .room-equipment {
-            margin-bottom: 0.5rem;
-        }
-
-        .info-button {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            margin-top: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .info-button:hover {
-            background-color: #008C82;
-        }
-
-        footer {
-            background-color: var(--light-gray);
-            color: var(--text-color);
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .menu {
-                display: none;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <base href="https://bureaudescongres.netlify.app/">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/" class="logo">Bureau des Congrès de Limoges</a>
+            <a href="index.html" class="logo">Bureau des Congrès de Limoges</a>
             <ul class="menu">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/salles-de-reunion">Salles de réunion</a></li>
-                <li><a href="/activites">Activités</a></li>
-                <li><a href="/traiteurs">Traiteurs</a></li>
-                <li><a href="/transport">Transport</a></li>
-                <li><a href="/hotels">Hôtels</a></li>
-                <li><a href="/technique">Technique</a></li>
-                <li><a href="/cadeaux">Cadeaux</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="salles-de-reunion.html">Salles de réunion</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="traiteurs.html">Traiteurs</a></li>
+                <li><a href="transport.html">Transport</a></li>
+                <li><a href="hotels.html">Hôtels</a></li>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="cadeaux.html">Cadeaux</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -179,63 +32,4 @@
             <div class="room-card">
                 <img src="https://source.unsplash.com/random/600x400?conference-room" alt="Salle Consulat" class="room-image">
                 <div class="room-info">
-                    <h3 class="room-name">Salle Consulat</h3>
-                    <p class="room-capacity">Capacité : 50 personnes</p>
-                    <p class="room-equipment">Équipements : Vidéoprojecteur, Wifi, Sonorisation</p>
-                    <a href="/salles-de-reunion/consulat" class="info-button">Plus d'informations</a>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <img src="https://source.unsplash.com/random/600x400?meeting-room" alt="Salle Porcelaine" class="room-image">
-                <div class="room-info">
-                    <h3 class="room-name">Salle Porcelaine</h3>
-                    <p class="room-capacity">Capacité : 100 personnes</p>
-                    <p class="room-equipment">Équipements : Écran géant, Wifi, Système de visioconférence</p>
-                    <a href="/salles-de-reunion/porcelaine" class="info-button">Plus d'informations</a>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <img src="https://source.unsplash.com/random/600x400?boardroom" alt="Salle Émaux" class="room-image">
-                <div class="room-info">
-                    <h3 class="room-name">Salle Émaux</h3>
-                    <p class="room-capacity">Capacité : 30 personnes</p>
-                    <p class="room-equipment">Équipements : Tableau interactif, Wifi, Système de son</p>
-                    <a href="/salles-de-reunion/emaux" class="info-button">Plus d'informations</a>
-                </div>
-            </div>
-
-            <div class="room-card">
-                <img src="https://source.unsplash.com/random/600x400?auditorium" alt="Auditorium Augustoritum" class="room-image">
-                <div class="room-info">
-                    <h3 class="room-name">Auditorium Augustoritum</h3>
-                    <p class="room-capacity">Capacité : 300 personnes</p>
-                    <p class="room-equipment">Équipements : Scène, Régie son et lumière, Cabines de traduction</p>
-                    <a href="/salles-de-reunion/augustoritum" class="info-button">Plus d'informations</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
-    </footer>
-
-    <script>
-        // Cette fonction simule la redirection vers une page détaillée pour chaque salle
-        function showRoomDetails(roomName) {
-            alert(`Page détaillée pour ${roomName}:\n\nDescriptif de la salle\nLieu de la salle\nConfigurations possibles\nNombre de personnes\n\nContact du référent:\nNom Prénom\nTéléphone: 05 XX XX XX XX\nEmail: contact@salle-${roomName.toLowerCase()}.com\n\nBesoin d'une solution clé en main ?\nContactez l'Office de Tourisme de Limoges:\nMarie Dupont\nTéléphone: 05 55 34 46 87\nEmail: m.dupont@limoges-tourisme.com`);
-        }
-
-        // Ajout des écouteurs d'événements pour les boutons "Plus d'informations"
-        document.querySelectorAll('.info-button').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const roomName = e.target.closest('.room-card').querySelector('.room-name').textContent;
-                showRoomDetails(roomName);
-            });
-        });
-    </script>
-</body>
-</html>
+                    <h3 class="room-name">Salle Consulat</h
