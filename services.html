@@ -1,0 +1,228 @@
+<html><head><base href="https://www.brocantechic.com/activites">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activités - Bureau des Congrès de Limoges</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  :root {
+    --primary-color: #FF5A5F;
+    --secondary-color: #00A699;
+    --text-color: #484848;
+    --background-color: #FFFFFF;
+    --light-gray: #F7F7F7;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--background-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .menu li a:hover {
+    color: var(--primary-color);
+  }
+
+  main {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .activity-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .activity-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .activity-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .activity-info {
+    padding: 1.5rem;
+  }
+
+  .activity-info h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .activity-info p {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Bureau des Congrès de Limoges</a>
+      <ul class="menu">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/#services">Nos Services</a></li>
+        <li><a href="/activites">Activités</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Nos Activités</h1>
+    <div class="activities-grid">
+      <div class="activity-card">
+        <img src="https://source.unsplash.com/random/400x300?porcelain" alt="Atelier Porcelaine" class="activity-image">
+        <div class="activity-info">
+          <h2>Atelier Porcelaine</h2>
+          <p>Découvrez l'art de la porcelaine de Limoges et créez votre propre pièce unique.</p>
+          <a href="/activites/atelier-porcelaine" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="activity-card">
+        <img src="https://source.unsplash.com/random/400x300?wine-tasting" alt="Dégustation de Vins" class="activity-image">
+        <div class="activity-info">
+          <h2>Dégustation de Vins</h2>
+          <p>Savourez une sélection de vins locaux et apprenez l'art de la dégustation.</p>
+          <a href="/activites/degustation-vins" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="activity-card">
+        <img src="https://source.unsplash.com/random/400x300?historic-tour" alt="Visite Historique" class="activity-image">
+        <div class="activity-info">
+          <h2>Visite Historique</h2>
+          <p>Explorez le riche patrimoine de Limoges lors d'une visite guidée captivante.</p>
+          <a href="/activites/visite-historique" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="activity-card">
+        <img src="https://source.unsplash.com/random/400x300?cooking-class" alt="Cours de Cuisine" class="activity-image">
+        <div class="activity-info">
+          <h2>Cours de Cuisine</h2>
+          <p>Apprenez à préparer des spécialités locales avec un chef renommé.</p>
+          <a href="/activites/cours-cuisine" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="activity-card">
+        <img src="https://source.unsplash.com/random/400x300?team-building" alt="Team Building" class="activity-image">
+        <div class="activity-info">
+          <h2>Team Building</h2>
+          <p>Renforcez la cohésion de votre équipe avec nos activités sur mesure.</p>
+          <a href="/activites/team-building" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="activity-card">
+        <img src="https://source.unsplash.com/random/400x300?nature-walk" alt="Balade Nature" class="activity-image">
+        <div class="activity-info">
+          <h2>Balade Nature</h2>
+          <p>Profitez de la beauté naturelle de la région lors d'une excursion guidée.</p>
+          <a href="/activites/balade-nature" class="btn">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
