@@ -1,0 +1,280 @@
+<html><head><base href="https://bureaudescongres.netlify.app/%20ajoute%20plus%20de%20salles.%20Il%20me%20faut%206%20salles.%20Les%20salles%20doivent%20avoir%20un%20bouton%20plus%20d'informations.%20Le%20bouton%20doit%20rediriger%20sur%20une%20nouvelle%20page%20avec%20toutes%20les%20informations%20sur%20la%20salle%20:%20Emplacement,%20taille,%20configurations%20possibles%20(th%C3%A9%C3%A2tre,%20classe,%20U,%20conf%C3%A9rence).%20il%20doit%20%C3%A9galement%20avoir%20le%20contact%20du%20gestionnaire%20de%20la%20salle%20(pr%C3%A9nom,%20nom,%20t%C3%A9l%C3%A9phone,%20mail).%20Il%20doit%20avoir%20un%20dessous%20de%20la%20partie%20contact%20une%20seconde%20partie%20contact%20:%20Vous%20recherchez%20une%20solution%20cl%C3%A9%20en%20main,%20contactez%20l'office%20de%20tourisme%20de%20limoges,%20ajoute%20le%20nom%20du%20service%20congr%C3%A8s,%20le%20num%C3%A9ro%20et%20le%20mail.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salles de réunion - Bureau des Congrès de Limoges</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  :root {
+    --primary-color: #FF5A5F;
+    --secondary-color: #00A699;
+    --text-color: #484848;
+    --background-color: #FFFFFF;
+    --light-gray: #F7F7F7;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--background-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .menu li a:hover {
+    color: var(--primary-color);
+  }
+
+  main {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .room-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .room-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .room-info {
+    padding: 1.5rem;
+  }
+
+  .room-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+
+  .room-features {
+    list-style-type: none;
+    margin-top: 1rem;
+  }
+
+  .room-features li {
+    margin-bottom: 0.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Bureau des Congrès de Limoges</a>
+      <ul class="menu">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/services">Nos Services</a></li>
+        <li><a href="/activites">Activités</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Nos Salles de Réunion</h1>
+    <p class="intro">Découvrez notre sélection de salles de réunion adaptées à tous vos besoins professionnels. Que ce soit pour une réunion intime, une conférence ou un grand événement, nous avons l'espace parfait pour vous.</p>
+
+    <div class="rooms-grid">
+      <div class="room-card">
+        <img src="https://source.unsplash.com/random/400x300?conference-room" alt="Salle Porcelaine">
+        <div class="room-info">
+          <h3>Salle Porcelaine</h3>
+          <p>Une salle élégante pour vos réunions importantes.</p>
+          <ul class="room-features">
+            <li>Capacité : 20 personnes</li>
+            <li>Équipement audiovisuel</li>
+            <li>Wi-Fi haut débit</li>
+          </ul>
+          <a href="/services/salles/porcelaine" class="btn btn-primary">Plus d'informations</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://source.unsplash.com/random/400x300?meeting-room" alt="Salle Émaux">
+        <div class="room-info">
+          <h3>Salle Émaux</h3>
+          <p>Un espace moderne pour vos séminaires et formations.</p>
+          <ul class="room-features">
+            <li>Capacité : 50 personnes</li>
+            <li>Configuration modulable</li>
+            <li>Équipement de visioconférence</li>
+          </ul>
+          <a href="/services/salles/emaux" class="btn btn-primary">Plus d'informations</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://source.unsplash.com/random/400x300?auditorium" alt="Auditorium Augustoritum">
+        <div class="room-info">
+          <h3>Auditorium Augustoritum</h3>
+          <p>Notre plus grande salle pour vos conférences et événements.</p>
+          <ul class="room-features">
+            <li>Capacité : 300 personnes</li>
+            <li>Scène et régie technique</li>
+            <li>Cabines de traduction</li>
+          </ul>
+          <a href="/services/salles/augustoritum" class="btn btn-primary">Plus d'informations</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://source.unsplash.com/random/400x300?boardroom" alt="Salle Kaolin">
+        <div class="room-info">
+          <h3>Salle Kaolin</h3>
+          <p>Une salle de conseil exclusive pour vos réunions stratégiques.</p>
+          <ul class="room-features">
+            <li>Capacité : 15 personnes</li>
+            <li>Équipement haut de gamme</li>
+            <li>Vue panoramique sur la ville</li>
+          </ul>
+          <a href="/services/salles/kaolin" class="btn btn-primary">Plus d'informations</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://source.unsplash.com/random/400x300?workshop" alt="Salle Atelier">
+        <div class="room-info">
+          <h3>Salle Atelier</h3>
+          <p>Un espace créatif pour vos workshops et brainstormings.</p>
+          <ul class="room-features">
+            <li>Capacité : 30 personnes</li>
+            <li>Mobilier flexible</li>
+            <li>Murs inscriptibles</li>
+          </ul>
+          <a href="/services/salles/atelier" class="btn btn-primary">Plus d'informations</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://source.unsplash.com/random/400x300?amphitheater" alt="Amphithéâtre Turgot">
+        <div class="room-info">
+          <h3>Amphithéâtre Turgot</h3>
+          <p>Un amphithéâtre moderne pour vos grands événements.</p>
+          <ul class="room-features">
+            <li>Capacité : 200 personnes</li>
+            <li>Acoustique optimisée</li>
+            <li>Système de projection avancé</li>
+          </ul>
+          <a href="/services/salles/turgot" class="btn btn-primary">Plus d'informations</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Add any necessary JavaScript here
+  </script>
+</body>
+</html>
