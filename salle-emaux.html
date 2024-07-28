@@ -1,0 +1,244 @@
+<html><head><base href="https://bureaudescongres.netlify.app/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salle Émaux - Bureau des Congrès de Limoges</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  :root {
+    --primary-color: #FF5A5F;
+    --secondary-color: #00A699;
+    --text-color: #484848;
+    --background-color: #FFFFFF;
+    --light-gray: #F7F7F7;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--background-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .menu li a:hover {
+    color: var(--primary-color);
+  }
+
+  main {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .room-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .room-info h2 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .room-info p {
+    margin-bottom: 1rem;
+  }
+
+  .room-features {
+    list-style-type: none;
+    margin-bottom: 2rem;
+  }
+
+  .room-features li {
+    margin-bottom: 0.5rem;
+  }
+
+  .configurations {
+    margin-bottom: 2rem;
+  }
+
+  .configurations h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-info {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .cta-contact {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .cta-contact h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .room-details {
+      grid-template-columns: 1fr;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Bureau des Congrès de Limoges</a>
+      <ul class="menu">
+        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/services">Nos Services</a></li>
+        <li><a href="/activites">Activités</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Salle Émaux</h1>
+    <div class="room-details">
+      <img src="https://source.unsplash.com/random/800x600?meeting-room" alt="Salle Émaux" class="room-image">
+      <div class="room-info">
+        <h2>Un espace moderne pour vos séminaires et formations</h2>
+        <p>La Salle Émaux est un espace polyvalent idéal pour vos séminaires, formations et réunions de moyenne envergure. Avec son équipement de pointe et sa configuration modulable, elle s'adapte à tous vos besoins.</p>
+        
+        <h3>Caractéristiques :</h3>
+        <ul class="room-features">
+          <li>Capacité : 50 personnes</li>
+          <li>Superficie : 80 m²</li>
+          <li>Configuration modulable</li>
+          <li>Équipement de visioconférence</li>
+          <li>Wi-Fi haut débit</li>
+          <li>Système de sonorisation intégré</li>
+          <li>Écran de projection et vidéoprojecteur</li>
+        </ul>
+
+        <div class="configurations">
+          <h3>Configurations possibles :</h3>
+          <ul>
+            <li>Théâtre : 50 personnes</li>
+            <li>Classe : 40 personnes</li>
+            <li>U : 25 personnes</li>
+            <li>Conférence : 30 personnes</li>
+          </ul>
+        </div>
+
+        <p><strong>Emplacement :</strong> Centre des congrès de Limoges, 2ème étage</p>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact du gestionnaire de la salle</h3>
+      <p><strong>Nom :</strong> Marie Dupont</p>
+      <p><strong>Téléphone :</strong> 05 55 12 34 56</p>
+      <p><strong>Email :</strong> marie.dupont@congres-limoges.fr</p>
+    </div>
+
+    <div class="cta-contact">
+      <h3>Vous recherchez une solution clé en main ?</h3>
+      <p>Contactez l'Office de Tourisme de Limoges :</p>
+      <p><strong>Service Congrès et Événements</strong></p>
+      <p>Téléphone : 05 55 34 70 28</p>
+      <p>Email : congres@limoges-tourisme.com</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Add any necessary JavaScript here
+  </script>
+</body>
+</html>
