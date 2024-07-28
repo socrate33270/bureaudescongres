@@ -1,0 +1,241 @@
+<html><head><base href="https://bureaudescongres.netlify.app/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Services - Bureau des Congrès de Limoges</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  :root {
+    --primary-color: #FF5A5F;
+    --secondary-color: #00A699;
+    --text-color: #484848;
+    --background-color: #FFFFFF;
+    --light-gray: #F7F7F7;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--background-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .menu li a:hover {
+    color: var(--primary-color);
+  }
+
+  main {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .service-info {
+    padding: 1.5rem;
+  }
+
+  .service-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Bureau des Congrès de Limoges</a>
+      <ul class="menu">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/services">Nos Services</a></li>
+        <li><a href="/activites">Activités</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Nos Services</h1>
+    <p class="intro">Découvrez notre gamme complète de services pour rendre votre événement inoubliable. Du choix de la salle à l'organisation des moindres détails, nous sommes là pour vous accompagner.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://source.unsplash.com/random/400x300?conference-room" alt="Salles">
+        <div class="service-info">
+          <h3>Salles</h3>
+          <p>Des espaces adaptés à tous vos besoins, de la réunion intime à la grande conférence.</p>
+          <a href="/services/salles" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://source.unsplash.com/random/400x300?catering" alt="Traiteurs">
+        <div class="service-info">
+          <h3>Traiteurs</h3>
+          <p>Une sélection de traiteurs locaux pour régaler vos invités avec la gastronomie limousine.</p>
+          <a href="/services/traiteurs" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://source.unsplash.com/random/400x300?hotel" alt="Hôtels">
+        <div class="service-info">
+          <h3>Hôtels</h3>
+          <p>Un large choix d'hébergements pour accueillir confortablement vos participants.</p>
+          <a href="/services/hotels" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://source.unsplash.com/random/400x300?transport" alt="Transports">
+        <div class="service-info">
+          <h3>Transports</h3>
+          <p>Des solutions de transport adaptées pour faciliter les déplacements de vos invités.</p>
+          <a href="/services/transports" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://source.unsplash.com/random/400x300?audio-visual" alt="Technique">
+        <div class="service-info">
+          <h3>Technique</h3>
+          <p>Équipements audiovisuels et assistance technique pour des présentations impeccables.</p>
+          <a href="/services/technique" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://source.unsplash.com/random/400x300?gift" alt="Cadeaux">
+        <div class="service-info">
+          <h3>Cadeaux</h3>
+          <p>Des idées originales de cadeaux et souvenirs pour vos participants.</p>
+          <a href="/services/cadeaux" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Add any necessary JavaScript here
+  </script>
+</body>
+</html>
