@@ -1,165 +1,168 @@
-<html><head><base href="https://https://bureaudescongres.netlify.app/">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salle Porcelaine - Bureau des Congrès de Limoges</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salle Porcelaine - Bureau des Congrès de Limoges</title>
+  <base href="https://bureaudescongres.netlify.app/">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-  :root {
-    --primary-color: #FF5A5F;
-    --secondary-color: #00A699;
-    --text-color: #484848;
-    --background-color: #FFFFFF;
-    --light-gray: #F7F7F7;
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-  }
-
-  header {
-    background-color: var(--background-color);
-    padding: 1rem 2rem;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-
-  .menu {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-  }
-
-  .menu li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-
-  .menu li a:hover {
-    color: var(--primary-color);
-  }
-
-  main {
-    padding-top: 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-  }
-
-  .room-details {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .room-image {
-    flex: 1;
-  }
-
-  .room-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .room-info {
-    flex: 1;
-  }
-
-  .info-section {
-    margin-bottom: 1.5rem;
-  }
-
-  .info-section h2 {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-  }
-
-  .info-section ul {
-    list-style-type: none;
-  }
-
-  .info-section li {
-    margin-bottom: 0.5rem;
-  }
-
-  .contact-section {
-    background-color: var(--light-gray);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-top: 2rem;
-  }
-
-  .contact-section h2 {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-  }
-
-  footer {
-    background-color: var(--text-color);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-  }
-
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
+    :root {
+      --primary-color: #FF5A5F;
+      --secondary-color: #00A699;
+      --text-color: #484848;
+      --background-color: #FFFFFF;
+      --light-gray: #F7F7F7;
     }
 
-    .room-details {
-      flex-direction: column;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--background-color);
+      padding: 1rem 2rem;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .menu {
+      list-style-type: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .menu li a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .menu li a:hover {
+      color: var(--primary-color);
+    }
+
+    main {
+      padding-top: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
     }
-  }
-</style>
+
+    .room-details {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .room-image {
+      flex: 1;
+    }
+
+    .room-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .room-info {
+      flex: 1;
+    }
+
+    .info-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .info-section h2 {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .info-section ul {
+      list-style-type: none;
+    }
+
+    .info-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-section {
+      background-color: var(--light-gray);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .contact-section h2 {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: var(--text-color);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+
+      .room-details {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <a href="/" class="logo">Bureau des Congrès de Limoges</a>
       <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="/">Accueil</a></li>
         <li><a href="/services">Nos Services</a></li>
         <li><a href="/activites">Activités</a></li>
         <li><a href="/contact">Contact</a></li>
@@ -231,3 +234,4 @@
   </script>
 </body>
 </html>
+
