@@ -265,7 +265,7 @@
           </div>
         </a>
         <a href="/services/hotels" class="service-card">
-          <img src="https://source.unsplash.com/random/400x300?hotel" alt="Hôtels">
+           <img src="https://picsum.photos/400/300" alt="Hôtels">
           <div class="service-info">
             <h3>Hébergement</h3>
             <p>Un large choix d'hôtels pour tous les budgets</p>
@@ -315,15 +315,13 @@
     <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
   </footer>
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
+  <<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.service-card img');
+  images.forEach(function(img) {
+    img.src = 'https://picsum.photos/400/300?' + Math.random();
+  });
+});
+</script>
 </body>
 </html>
