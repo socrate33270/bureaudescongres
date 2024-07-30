@@ -8,32 +8,17 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-  :root {
-    --primary-color: #FF5A5F;
-    --secondary-color: #00A699;
-    --text-color: #484848;
-    --background-color: #FFFFFF;
-    --light-gray: #F7F7F7;
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
     line-height: 1.6;
+    color: #333;
     max-width: 800px;
     margin: 0 auto;
     padding: 80px 20px 20px;
   }
 
   header {
-    background-color: var(--background-color);
+    background-color: #FFFFFF;
     padding: 1rem 2rem;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -54,7 +39,7 @@
   .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #3498db;
     text-decoration: none;
   }
 
@@ -65,20 +50,19 @@
   }
 
   .menu li a {
-    color: var(--text-color);
+    color: #333;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
   }
 
   .menu li a:hover {
-    color: var(--primary-color);
+    color: #3498db;
   }
 
   h1 {
     text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 2rem;
+    color: #2c3e50;
   }
 
   .month {
@@ -86,41 +70,41 @@
   }
 
   .month h2 {
-    background-color: var(--secondary-color);
+    background-color: #3498db;
     color: white;
     padding: 10px;
     border-radius: 5px;
   }
 
   .event {
-    background-color: var(--light-gray);
-    border-left: 5px solid var(--primary-color);
-    padding: 15px;
-    margin-bottom: 15px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 0 5px 5px 0;
   }
 
   .event h3 {
-    margin: 0 0 10px 0;
-    color: var(--primary-color);
+    margin: 0 0 5px 0;
+    color: #2c3e50;
   }
 
   .event p {
-    margin: 5px 0;
+    margin: 0;
   }
 
   .event .date {
     font-weight: bold;
-    color: var(--secondary-color);
+    color: #2980b9;
   }
 
   .event .location {
     font-style: italic;
-    color: var(--text-color);
+    color: #7f8c8d;
   }
 
   .event .attendees {
-    color: var(--primary-color);
+    color: #e74c3c;
     font-weight: bold;
   }
 </style>
@@ -143,6 +127,14 @@
 
   <div class="month">
     <h2>Mars 2024</h2>
+    <div class="event">
+      <h3>Congrès International du Tourisme Durable</h3>
+      <p class="date">15-17 Mars 2024</p>
+      <p class="location">Zénith de Limoges, Limoges</p>
+      <p>Conférence annuelle sur les pratiques durables dans l'industrie du tourisme</p>
+      <p class="attendees">Personnes attendues : 1500</p>
+    </div>
+    <br>
     <div class="event">
       <h3>Congrès International du Tourisme Durable</h3>
       <p class="date">15-17 Mars 2024</p>
