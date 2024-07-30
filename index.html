@@ -257,13 +257,13 @@
             <p>Des espaces adaptés à tous vos besoins</p>
           </div>
         </a>
-        <a href="/services/traiteurs" class="service-card">
-          <img src="https://source.unsplash.com/random/400x300?catering" alt="Service traiteur">
-          <div class="service-info">
-            <h3>Traiteurs</h3>
-            <p>Une sélection de traiteurs locaux de qualité</p>
-          </div>
-        </a>
+       <a href="/services/traiteurs" class="service-card">
+  <img src="" alt="Service traiteur" data-category="traiteur">
+  <div class="service-info">
+    <h3>Traiteurs</h3>
+    <p>Une sélection de traiteurs locaux de qualité</p>
+  </div>
+</a>
         <a href="/services/hotels" class="service-card">
            <img src="https://picsum.photos/400/300" alt="Hôtels">
           <div class="service-info">
@@ -315,11 +315,29 @@
     <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
   </footer>
 
-  <<script>
+  <script>
 document.addEventListener('DOMContentLoaded', function() {
-  var images = document.querySelectorAll('.service-card img');
+  const imageCategories = {
+    'traiteur': 5,  // Vous avez 5 images pour la catégorie traiteur
+    // Ajoutez ici les autres catégories avec leur nombre d'images respectif
+  };
+
+  function getRandomImageNumber(category) {
+    const max = imageCategories[category];
+    return Math.floor(Math.random() * max) + 1;
+  }
+
+  const images = document.querySelectorAll('img[data-category]');
   images.forEach(function(img) {
-    img.src = 'https://picsum.photos/400/300?' + Math.random();
+    const category = img.getAttribute('data-category');
+    if (category && imageCategories.hasOwnProperty(category)) {
+      const randomNumber = getRandomImageNumber(category);
+      img.src = `/images/${category}:${category}${randomNumber}.jpeg`;
+      
+      // Définir une taille fixe pour l'image (ajustez selon vos besoins)
+      img.width = 400;
+      img.height = 300;
+    }
   });
 });
 </script>
