@@ -1,9 +1,11 @@
-<html><head><base href="https://bureaudescongres.netlify.app/
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<base href="https://bureaudescongres.netlify.app/">
 <meta charset="UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bureau des Congrès de Limoges - Votre partenaire événementiel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -28,60 +30,48 @@
     line-height: 1.6;
   }
 
-  header {
-    background-color: var(--background-color);
-    padding: 1rem 2rem;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-  }
-
   .navbar {
-  background-color: var(--background-color) !important;
-}
+    background-color: var(--background-color) !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
 
-.navbar-brand {
-  color: var(--primary-color) !important;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.nav-link {
-  color: var(--text-color) !important;
-  font-weight: 600;
-}
-
-.nav-link:hover {
-  color: var(--primary-color) !important;
-}
-
-  .logo {
-    font-size: 1.8rem;
+  .navbar-brand {
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
   }
 
-  .menu {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
+  @media (max-width: 991px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+      max-width: 70%;
+      white-space: normal;
+      line-height: 1.2;
+    }
   }
 
-  .menu li a {
-    color: var(--text-color);
-    text-decoration: none;
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .nav-link {
+    color: var(--text-color) !important;
     font-weight: 600;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem !important;
   }
 
-  .menu li a:hover {
-    color: var(--primary-color);
+  .nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      margin-top: 1rem;
+    }
   }
 
   main {
-    padding-top: 80px;
+    padding-top: 76px;
   }
 
   .hero {
@@ -123,7 +113,7 @@
 
   .btn-primary {
     background-color: var(--primary-color);
-    color: white;
+    border-color: var(--primary-color);
   }
 
   .btn-secondary {
@@ -226,6 +216,7 @@
     text-align: center;
   }
 
+  @media (max-width: 768px) {
     h1 {
       font-size: 2rem;
     }
@@ -233,35 +224,34 @@
 </style>
 </head>
 <body>
- 
   <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Bureau des Congrès de Limoges</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tous-nos-services.html">Nos Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/activites">Activités</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/agenda.html">Agenda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Bureau des Congrès de Limoges</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tous-nos-services.html">Nos Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/activites">Activités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/agenda.html">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -284,13 +274,13 @@
             <p>Des espaces adaptés à tous vos besoins</p>
           </div>
         </a>
-       <a href="/services/traiteurs" class="service-card">
-  <img src="" alt="Service traiteur" data-category="traiteur">
-  <div class="service-info">
-    <h3>Traiteurs</h3>
-    <p>Une sélection de traiteurs locaux de qualité</p>
-  </div>
-</a>
+        <a href="/services/traiteurs" class="service-card">
+          <img src="" alt="Service traiteur" data-category="traiteur">
+          <div class="service-info">
+            <h3>Traiteurs</h3>
+            <p>Une sélection de traiteurs locaux de qualité</p>
+          </div>
+        </a>
         <a href="/services/hotels" class="service-card">
            <img src="https://picsum.photos/400/300" alt="Hôtels">
           <div class="service-info">
@@ -301,7 +291,7 @@
         <a href="/services/activites" class="service-card">
           <img src="" alt="activites" data-category="activite">
           <div class="service-info">
-            <h3>Activites</h3>
+            <h3>Activités</h3>
             <p>Renforcez la cohésion de votre équipe avec nos activités sur mesure.</p>
           </div>
         </a>
@@ -342,34 +332,32 @@
     <p>&copy; 2023 Bureau des Congrès de Limoges. Tous droits réservés.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const imageCategories = {
-    'traiteur': 2,
-    'salle': 2,
-    'activite': 1,
-    'hotel': 1,// Vous avez 5 images pour la catégorie traiteur
-    // Ajoutez ici les autres catégories avec leur nombre d'images respectif
-  };
+    document.addEventListener('DOMContentLoaded', function() {
+      const imageCategories = {
+        'traiteur': 2,
+        'salle': 2,
+        'activite': 1,
+        'hotel': 1,
+      };
 
-  function getRandomImageNumber(category) {
-    const max = imageCategories[category];
-    return Math.floor(Math.random() * max) + 1;
-  }
+      function getRandomImageNumber(category) {
+        const max = imageCategories[category];
+        return Math.floor(Math.random() * max) + 1;
+      }
 
-  const images = document.querySelectorAll('img[data-category]');
-  images.forEach(function(img) {
-    const category = img.getAttribute('data-category');
-    if (category && imageCategories.hasOwnProperty(category)) {
-      const randomNumber = getRandomImageNumber(category);
-      img.src = `/images/${category}:${category}${randomNumber}.jpeg`;
-      
-      // Définir une taille fixe pour l'image (ajustez selon vos besoins)
-      img.width = 400;
-      img.height = 300;
-    }
-  });
-});
-</script>
+      const images = document.querySelectorAll('img[data-category]');
+      images.forEach(function(img) {
+        const category = img.getAttribute('data-category');
+        if (category && imageCategories.hasOwnProperty(category)) {
+          const randomNumber = getRandomImageNumber(category);
+          img.src = `/images/${category}:${category}${randomNumber}.jpeg`;
+          img.width = 400;
+          img.height = 300;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
