@@ -35,13 +35,24 @@
     z-index: 1000;
   }
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  .navbar {
+  background-color: var(--background-color) !important;
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
 
   .logo {
     font-size: 1.8rem;
@@ -213,11 +224,6 @@
     text-align: center;
   }
 
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-
     h1 {
       font-size: 2rem;
     }
@@ -225,17 +231,35 @@
 </style>
 </head>
 <body>
+ 
   <header>
-    <nav>
-      <a href="/" class="logo">Bureau des Congrès de Limoges</a>
-      <ul class="menu">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="tous-nos-services.html">Nos Services</a></li>
-        <li><a href="/activites">Activités</a></li>
-        <li><a href=/agenda.html>Agenda</a></li>
-        <li><a href="/contact">Contact</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Bureau des Congrès de Limoges</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tous-nos-services.html">Nos Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/activites">Activités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/agenda.html">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
       </ul>
-    </nav>
+    </div>
+  </div>
+</nav>
   </header>
 
   <main>
